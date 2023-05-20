@@ -130,7 +130,7 @@ Algoritmo EnterosRango
 /* Hacer mientras */
 Algoritmo EnterosRango
 {
-    inicializar en entero a cont=0, numero, cantidad, menor25 = 0, mayor75 = 0, total_rango = 0;
+    inicializar en entero a cont=1, numero, cantidad, menor25 = 0, mayor75 = 0, total_rango = 0;
 
     // unset numero porque no es necesario inicializar en 0.
     // unset cantidad tiene la misma historia.
@@ -150,7 +150,7 @@ Algoritmo EnterosRango
                 }
             cont = cont + 1;
         }
-        mientras (cont < cantidad);    // Si entiendes porqué no ``(cont <= cantidad)``?
+        mientras (cont <= cantidad);    // Si entiendes porqué no ``(cont <= cantidad)``?
             imprimir ("El total de numeros menores a 25 son = ", menor25);
             imprimir ("El total de numeros que se encuentran entre el rango de 25 a 75 son = ", total_rango);
             imprimir ("El total de numeros mayores a 75 son = ", mayor75);
