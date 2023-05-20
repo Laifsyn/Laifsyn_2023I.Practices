@@ -242,7 +242,7 @@ Algoritmo MayorTreintaNumeros
 
 Algoritmo MenorTreintaNumeros
 {
-  inicializar en entero a numero = 0, cont = 0, menor = 0;
+  inicializar en entero a numero = 0, cont = 1, menor = 0;
   mientras (cont <= 30)
   {
     imprimir ("Ingrese el numero: ");
@@ -260,7 +260,7 @@ Algoritmo MenorTreintaNumeros
 Algoritmo MenorTreintaNumeros
 {
   inicializar en entero a numero = 0, cont = 0, menor = 0;
-  para (cont = 0; cont <= 30; cont = cont + 1)
+  para (cont = 1; cont <= 30; cont = cont + 1)
   {
     imprimir ("Ingrese el numero: ");
       leer (numero);
@@ -271,7 +271,6 @@ Algoritmo MenorTreintaNumeros
             si (numero < menor) entonces
             menor = numero;
       }
-      cont = cont + 1;
   }
   imprimir ("El menor de los numeros: ", menor)
 }
@@ -295,7 +294,7 @@ Algoritmo Numeros10Veces
       imprimir ("Ingrese el tercer numero: ");
         leer (C);
       {
-        si ((A == B) o (B == C)) entonces
+        si ((A == B) o (B == C) o (C == A)) entonces
           imprimir ("Usted intodujo dos numeros iguales: ");
           sino 
             si ((A < B) y (A < C)) entonces
@@ -315,8 +314,10 @@ Algoritmo Numeros10Veces
             sino 
               mayor = C;
       }
-    }
+    Imprimir("mayor:", mayor, ", menor:", menor);
     cont = cont + 1;
+    }
+
 }
 
 //Ciclo para
@@ -333,7 +334,7 @@ Algoritmo Numeros10Veces
       imprimir ("Ingrese el tercer numero: ");
         leer (C);
       {
-        si ((A == B) o (B == C)) entonces
+        si ((A == B) o (B == C) o (C == A)) entonces
           imprimir ("Usted intodujo dos numeros iguales: ");
           sino 
             si ((A < B) y (A < C)) entonces
@@ -353,6 +354,7 @@ Algoritmo Numeros10Veces
             sino 
               mayor = C;
       }
+    Imprimir("mayor:", mayor, ", menor:", menor);
     }
 }
 
