@@ -28,19 +28,15 @@ Algoritmo MientrasPromedioFinal
 
     si (promedio >= 91) entonces
         notaFinal = 'A';
-
         sino si (promedio >= 81)
            notaFinal = 'B';
-
            sino si (promedio >= 71)
               notaFinal = 'C';
-
               sino si (promedio >= 61)
                 notaFinal = 'D';
-
                 sino 
-                  notaFinal = 'F'
-        imprimir ("El estudiante ", nombre," tiene promedio de: ", promedio, " y nota final de: ", notaFinal)
+                  notaFinal = 'F';
+        imprimir ("El estudiante ", nombre," tiene promedio de: ", promedio, " y nota final de: ", notaFinal);
     }
 }
 
@@ -65,19 +61,15 @@ Algoritmo MientrasPromedioFinal
 
     si (promedio >= 91) entonces
         notaFinal = 'A';
-
         sino si (promedio >= 81)
            notaFinal = 'B';
-
            sino si (promedio >= 71)
               notaFinal = 'C';
-
               sino si (promedio >= 61)
                 notaFinal = 'D';
-
                 sino 
                   notaFinal = 'F'
-        imprimir ("El estudiante ", nombre," tiene promedio de: ", promedio, " y nota final de: ", notaFinal)
+        imprimir ("El estudiante ", nombre," tiene promedio de: ", promedio, " y nota final de: ", notaFinal);
     }
 }
 
@@ -104,18 +96,18 @@ Algoritmo Salario
            leer (horTrabajadas);
 
         salBruto = salHora * horTrabajadas;
+        //{   Esta llave no va
+          // si (salBruto<500) entonces 
+          //   descuento = 0; // descuento ya vale 0
+          // sino 
+          si ((salBruto>=500) y (salBruto<=1000)) entonces
+            descuento = 0.02;
+          sino
+              si (salBruto>1000) entonces
+                descuento = 0.05;   
+        //}
         descuentoSal = salBruto * descuento; 
         salNeto = salBruto - descuentoSal;
-        {
-          si (salBruto<500) entonces
-            descuento = 0;
-          sino 
-              si ((salBruto>=500) y (salBruto<=1000)) entonces
-                descuento = 0.20;
-              sino
-                  si (salBruto>1000) entonces
-                    descuento = 0.50;   
-        }
         imprimir (nombre, " recibe un salario bruto de: ", salBruto, " que al recibir un descuento de: ", descuento, " tiene un salario neto de: ", salNeto);
         cont = cont + 1;
       }
@@ -139,18 +131,18 @@ Algoritmo Salario
            leer (horTrabajadas);
 
         salBruto = salHora * horTrabajadas;
+        //{   Esta llave no va
+          // si (salBruto<500) entonces 
+          //   descuento = 0; // descuento ya vale 0
+          // sino 
+          si ((salBruto>=500) y (salBruto<=1000)) entonces
+            descuento = 0.02;
+          sino
+              si (salBruto>1000) entonces
+                descuento = 0.05;   
+        //}
         descuentoSal = salBruto * descuento; 
         salNeto = salBruto - descuentoSal;
-        {
-          si (salBruto < 500) entonces
-            descuento = 0;
-          sino 
-              si ((salBruto >= 500) y (salBruto <= 1000)) entonces
-                descuento = 0.20;
-              sino
-                  si (salBruto > 1000) entonces
-                    descuento = 0.50;   
-        }
         imprimir (nombre, " recibe un salario bruto de: ", salBruto, " que al recibir un descuento de: ", descuento, " tiene un salario neto de: ", salNeto);
       }
 }
@@ -162,7 +154,7 @@ Algoritmo Salario
 
 Algoritmo TresNumeros
 {
-   inicializar en entero a num1 = 0, num2 = 0, num3 = 0, cont = 0;
+   inicializar en entero a num1 = 0, num2 = 0, num3 = 0, cont = 0, suma;
 
       mientras (cont < 15)
       {
@@ -172,22 +164,24 @@ Algoritmo TresNumeros
           leer (num2);
         imprimir ("Ingrese el tercer numero: ");
           leer (num3);
+        suma=num1+num2+num3;
         si (num1 + num2 <= 20) entonces
           imprimir ("El tercer numero es: ", num3);
-        sino 
-          si (num2 != num3) entonces
-            imprimir ("El primer numero es: ", num1);
-          sino 
-            si ((num1+num2+num3)>50) entonces
-              imprimir ("La suma de los tres numeros es: ", num1+num2+num3);
-      }
+        
+        si (num2 != num3) entonces
+          imprimir ("El primer numero es: ", num1);
+        
+        si (suma>50) entonces
+          imprimir ("La suma de los tres numeros es: ", suma);
+
       cont = cont + 1;
+      }
 }
 
 //Ciclo para
 Algoritmo TresNumeros
 {
-   inicializar en entero a num1 = 0, num2 = 0, num3 = 0, cont = 0;
+   inicializar en entero a num1 = 0, num2 = 0, num3 = 0, cont = 0, suma;
 
       para(cont = 0; cont < 15; cont = cont + 1)
       {
@@ -197,14 +191,15 @@ Algoritmo TresNumeros
           leer (num2);
         imprimir ("Ingrese el tercer numero: ");
           leer (num3);
+        suma=num1+num2+num3;
         si (num1 + num2 <= 20) entonces
           imprimir ("El tercer numero es: ", num3);
-        sino 
-          si (num2 != num3) entonces
-            imprimir ("El primer numero es: ", num1);
-          sino 
-            si ((num1+num2+num3)>50) entonces
-              imprimir ("La suma de los tres numeros es: ", num1+num2+num3);
+        
+        si (num2 != num3) entonces
+          imprimir ("El primer numero es: ", num1);
+        
+        si (suma>50) entonces
+          imprimir ("La suma de los tres numeros es: ", suma);
       }
 }
 
