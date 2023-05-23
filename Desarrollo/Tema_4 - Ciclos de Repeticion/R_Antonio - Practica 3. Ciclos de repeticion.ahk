@@ -11,29 +11,63 @@ NOTA: Tome en cuenta los siguientes elementos:
 •	Utilice el ciclo mientras
 */
 
+{
+    Inicializar en Entero dia, mes, anual, indice = 1;
+    //
+    Mientras (indice <= 5)
+    {
+        Imprimir("Ingrese el dia");
+        Leer(dia);
+        Imprimir("Ingrese el mes");
+        Leer(mes);
+        Imprimir("Ingrese el año");
+        Leer(anual);
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        si (dia == 30 && (mes == 4 || mes == 6 || mes == 9 || mes == 11))
+            { //resuelve meses de 30 dias
+                dia = 1;
+                mes++;
+            }
+        sino si (mes == 2)
+            { //resuelve Febrero
+                si ((anual%4 == 0 && anual%100 != 0) || anual%400 == 0) //para Año bisiestos
+                    {
+                        si (dia == 29)
+                        {
+                            dia = 1;
+                            mes++;
+                        }
+                        sino 
+                            dia++;
+                    }
+                sino //para Año no bisiesto
+                    {
+                        si (dia == 29)
+                        {
+                            dia = 1;
+                            mes++;
+                        }
+                        sino 
+                            dia++;
+                    }
+            }
+        sino si (dia == 31)
+        {   \\ Resuelve Dias de 31
+            si (mes == 12) // Salto de Año
+                {
+                    anual++; mes = 1; dia = 1;
+                }
+            sino
+                {
+                    dia = 1; mes++;
+                }
+        }
+        sino
+            dia++;
+        
+        Imprimir(anual, "/", mes , "/", dia);
+    }
+}
 
 
 
