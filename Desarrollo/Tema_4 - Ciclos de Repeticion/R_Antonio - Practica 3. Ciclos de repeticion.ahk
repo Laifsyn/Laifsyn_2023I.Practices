@@ -69,12 +69,43 @@ NOTA: Tome en cuenta los siguientes elementos:
     }
 }
 
-
-
-
 /*
 2.	Dada tres fechas en formato día/mes/año determinar el número de días y el nombre del mes de dicha fecha, e imprimir por pantalla la fecha convertida a formato de día  “de” mes “de” año de cada una de las tres fechas leídas.
 
 NOTA: utilice el ciclo para.
 */
 
+{
+    Inicializar en Cadena fecha;
+    Inicializar en Entero[] mes[12];
+
+    Imprimir("Ingrese tu fecha: yyyy/MM/dd");
+    leer(fecha)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
