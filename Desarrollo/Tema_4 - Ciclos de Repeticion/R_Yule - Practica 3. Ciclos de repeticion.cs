@@ -33,64 +33,67 @@ Algoritmo CincoFechas
                 iden = 2;
         }
         mientras (iden == 2)
-            imprimir ("Ingrese el año: ");
+            {   
+                imprimir ("Ingrese el año: ");
                 leer (year);
             si (year < 1)
                 imprimir ("Error: Ingrese un año válido");
             sino 
                 iden = 0;
+            }
         
-        si (((mes == 2) y (dia > 28) y ((year %4) != 0)) o ((mes == 2) y (dia > 29) y (year %4 == 0)) o ((mes == 4) o (mes == 6) o (mes == 9) o (mes == 11) y (dia > 30)))
+        si (((mes == 2) y (dia > 28) y ((year %4) != 0)) o 
+        ((mes == 2) y (dia > 29) y (year %4 == 0)) o 
+        (((mes == 4) o (mes == 6) o (mes == 9) o (mes == 11)) y (dia > 30))
+        )
             {
                 imprimir ("Error: Usted introdujo una fecha incorrecta!")
                 cont = cont - 1;
                 iden = 3;
             }
         sino si (mes == 2) 
-                {
-                    si (year %4 == 0)
-                        si (dia == 29) entonces
-                            {
-                                mes = mes + 1;
-                                dia = 1;
-                            }
-                        sino 
-                            dia = dia + 1;
-                    sino
-                        si (dia == 28) entonces
-                            {
-                                dia = 1;
-                                mes = mes + 1;
-                            }
-                        sino    
-                            dia = dia + 1;
-                }
-            si (mes == 1 || mes == 3 || mes == 5 || mes == 7 || mes == 8 || mes == 10) entonces
-                si (dia == 31)
-                {
-                    mes = mes + 1;
-                    dia = 1;
-                }
-                sino 
-                    dia = dia + 1;
-            sino si (mes == 12) 
-                si (dia == 31)
-                {
-                    dia = 1;
-                    mes = 1;
-                    year = year + 1;
-                }
-                sino 
-                    dia = dia + 1;
-            si ((dia == 30) y (mes == 4 || mes == 6 || mes == 9 || mes == 11)) entonces
+            {
+                si (year %4 == 0)
+                    si (dia == 29) entonces
+                        {
+                            mes = mes + 1;
+                            dia = 1;
+                        }
+                    sino 
+                        dia = dia + 1;
+                sino
+                    si (dia == 28) entonces
+                        {
+                            dia = 1;
+                            mes = mes + 1;
+                        }
+                    sino    
+                        dia = dia + 1;
+            }
+        sino si (mes == 1 || mes == 3 || mes == 5 || mes == 7 || mes == 8 || mes == 10) entonces
+            si (dia == 31)
+            {
+                mes = mes + 1;
+                dia = 1;
+            }
+            sino 
+                dia = dia + 1;
+        sino si (mes == 12) 
+            si (dia == 31)
+            {
+                dia = 1;
+                mes = 1;
+                year = year + 1;
+            }
+            sino 
+                dia = dia + 1;
+        sino si ((dia == 30) y (mes == 4 || mes == 6 || mes == 9 || mes == 11)) entonces
                 { 
                     mes = mes + 1;
                     dia = 1;
                 }
             sino 
-                {
-                    dia = dia + 1;
-                }
+                dia = dia + 1;
             cont = cont + 1; 
         }
         si (iden == 0)
