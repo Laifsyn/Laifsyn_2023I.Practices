@@ -115,7 +115,8 @@ Algoritmo TresFechas
     inicializar en cadena a mesN;
     para (cont = 1; cont <= 3; cont = cont + 1)
     {
-         {
+        mientras (iden == 0)
+        {
             imprimir ("Ingrese el día: ");
                 leer (dia);
             si (dia <  1 || dia > 31) entonces
@@ -133,14 +134,19 @@ Algoritmo TresFechas
                 iden = 2;
         }
         mientras (iden == 2)
-            imprimir ("Ingrese el año: ");
-                leer (year);
-            si (year < 1)
-                imprimir ("Error: Ingrese un año válido");
-            sino 
-                iden = 0;
+        {
+        imprimir ("Ingrese el año: ");
+        leer (year);
+        si (year < 1)
+            imprimir ("Error: Ingrese un año válido");
+        sino 
+            iden = 0;
+        }
         
-        si (((mes == 2) y (dia > 28) y ((year %4) != 0)) o ((mes == 2) y (dia > 29) y (year %4 == 0)) o ((mes == 4) o (mes == 6) o (mes == 9) o (mes == 11)) y dia > 30)
+        si (((mes == 2) y (dia > 28) y ((year %4) != 0)) o 
+        ((mes == 2) y (dia > 29) y (year %4 == 0)) o 
+        (((mes == 4) o (mes == 6) o (mes == 9) o (mes == 11)) y dia > 30)
+        )
             {
                 imprimir ("Error: Usted introdujo una fecha incorrecta!");
                 cont = cont - 1;
