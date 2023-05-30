@@ -113,6 +113,12 @@ NOTA: utilice el ciclo para.
             caso 12:mesNombre = "Diciembre"; detener;
             defecto: Imprimir("Mes inválido");
         }
+
+        Imprimir("Ingrese el año");
+        Leer(anual);
+        si (anual < 1)
+            Imprimir("Año fuera de rango");
+
         si ((mes == 4 || mes == 6 || mes == 9 || mes == 11) && (dia > 30))
             Imprimir("Día fuera de rango");
         sino si (mes == 2)
@@ -125,11 +131,6 @@ NOTA: utilice el ciclo para.
                 si (dia > diasFebrero)
                     Imprimir("Día fuera de rango");
             }
-
-        Imprimir("Ingrese el año");
-        Leer(anual);
-        si (anual < 1)
-            Imprimir("Año fuera de rango");
         Imprimir("Fecha: ", dia, " de ", mesNombre, " de ", anual);
     }
 }
