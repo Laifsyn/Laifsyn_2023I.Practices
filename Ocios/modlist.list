@@ -1,3 +1,131 @@
+//https://github.com/Laifsyn/Laifsyn_2023I.Practices/blob/8832c3c55b31df0a55a27ec65f58f7fec6911a2f/Ocios/config.zip
+[1.19.4][fabric]TorchBowMod_v1.0
+[Client]colorfulhearts-fabric-1.19.4-3.0.0
+[Server]alternate-current-mc1.19-1.5.0
+[Server]dragonfight-fabric-1.19.4-3.8
+[Server]FastFurnace-1.19.2-7.0.0
+[Server]FastWorkbench-1.19.2-7.1.2
+[Server]flan-1.19.4-1.8.4.2-fabric
+[Server]InvView-1.4.10-1.19.3+
+[Server]vanish-1.19.4-1.4.3
+advancementinfo-1.19.4-fabric0.76.0-1.3.1
+alloy-forgery-2.0.20+1.19.4
+animal_feeding_trough-1.0.3+1.19.4
+antighost-1.19.3-fabric0.68.1-1.1.5
+appleskin-fabric-mc1.19.4-2.4.3
+architectury-8.1.80-fabric
+AttributeFix-Fabric-1.19.4-19.0.1
+badpackets-fabric-0.4.1
+balm-fabric-1.19.4-6.0.2
+BeaconOverhaul-1.7.6+1.19.4
+better-withered-mobs-1.7.3
+BetterPingDisplay-Fabric-1.19.4-2.0.3
+bettersafebed-fabric-1.19-4
+bettersleeping-0.6.1+1.19
+betterthanmending-1.3.0
+biggerspongeabsorptionradius-1.19.4-3.1
+Bookshelf-Fabric-1.19.4-18.0.4
+bsvsb-3.0.3
+cardinal-components-api-5.1.0
+Chunky-1.3.74
+cloth-config-10.0.96-fabric
+Clumps-fabric-1.19.4-10.0.0.2
+collective-1.19.4-6.54
+comforts-fabric-6.2.0+1.19.4
+concreteconversion-fabric-6.1.0.0
+Controlling-fabric-1.19.4-11.1.3
+copperhopper-0.2.0+1.19.4
+crawl-0.11.5
+Croptopia-1.19.4-FABRIC-2.2.2
+dracomelette-1.19-4
+Durability101-fabric-1.19.4-0.0.4
+dynamic-fps-2.2.0
+EnchantmentDescriptions-Fabric-1.19.4-15.0.1
+entityculling-fabric-1.6.2-mc1.19.4
+enviromats-fabric-1.19.4-2.1.4.1
+essential_commands-0.33.0-mc1.19.4
+experiencebottler-1.19.4+build.1
+ExtendedDrawers-1.4.0+mc.1.19.4
+fabric-api-0.81.1+1.19.4
+fabric-carpet-1.19.4-1.4.101+v230319
+fabric-language-kotlin-1.9.4+kotlin.1.8.21
+FallingTree-1.19.4-3.12.0
+Fastload+1.18.2-1.20-3.4.0
+ferritecore-5.2.0-fabric
+ForgeConfigAPIPort-v6.0.2-1.19.4-Fabric
+fueled-up-1.0.0
+fuelinfo-1.0.2+1.19.4
+harvestwithease-1.19.4-6.0.1.2-fabric
+health-levels-1.0.5
+horse-stats-vanilla-4.2.3
+ImmediatelyFast-1.1.12+1.19.4
+indium-1.0.15+mc1.19.4
+InventoryProfilesNext-fabric-1.19.4-1.9.7
+jepp-1.19.2-1.1.0-fabric
+krypton-0.2.2
+lambdynamiclights-2.3.0+1.19.4
+libIPN-fabric-1.19.4-2.0.7
+lithium-fabric-mc1.19.4-0.11.1
+logicgates-1.5
+lootr-1.19.4-0.5.26.66
+LuckPerms-Fabric-5.4.66
+memoryleakfix-fabric-1.17+-1.0.0
+modmenu-6.2.2
+more-geodes-1.7+1.19.4
+moreculling-1.19.4-0.17.0
+MouseTweaks-fabric-mc1.19.4-2.24
+mythicmetals-0.17.6+1.19.4
+mythicmetals-decorations-0.5.3+1.19.4
+netherportalfix-fabric-1.19.4-12.0.1
+NoChatReports-FABRIC-1.19.4-v2.1.2
+OfflineSkins-1.19.4-v1a-fabric
+owo-lib-0.10.3+1.19.4
+preciseblockplacing-2.0.0+1.19-fabric
+projectile_damage-fabric-3.2.0+1.19.4
+quartz-elevator-2.2.2+1.19
+recast-1.19.4-3.0
+reeses_sodium_options-1.5.0+mc1.19.4-build.72
+rer-2.8.0
+roughly-searchable-2.5.3+1.19.4
+RoughlyEnoughItems-11.0.597
+RoughlyEnoughProfessions-fabric-1.19.4-1.2.1
+scaffoldingdropsnearby-1.19.4-3.0
+Searchables-fabric-1.19.4-1.0.3
+servercore-1.3.5-1.19.4
+shulkerboxtooltip-fabric-3.2.5+1.19.4
+simplylight-fabric-1.19.3-1.4.3
+sodium-extra-0.4.18+mc1.19.4-build.100
+sodium-fabric-mc1.19.4-0.4.10+build.24
+sodium-shadowy-path-blocks-3.1.0
+spark-1.10.37-fabric
+starlight-1.1.1+fabric.ae22326
+supermartijn642corelib-1.1.7-fabric-mc1.19
+TrampleNoMore-Fabric-1.19.4-11.0.1
+travelers-backpack-1.19.4-8.4.4
+upgradedechests-1.0.4-1.19.4
+upgradedshulkers-1.1.3-1.19.4
+vacuum_hopper-1.0.1-1.19.4
+valkyrielib-fabric-1.19.4-4.0.4.0
+wetlavasponge-1.0.1
+worldedit-mod-7.2.14
+WorldEditCUI-1.19.4+01
+wraith-silkspawners-1.1.2
+wraith-waystones-3.1.1+mc1.19.4
+wthit-fabric-7.3.0
+Xaeros_Minimap_23.4.3_Fabric_1.19.4
+XaerosWorldMap_1.30.2_Fabric_1.19.4
+youre-in-grave-danger-1.6.0
+YungsApi-1.19.4-Fabric-3.10.1
+YungsBetterDesertTemples-1.19.4-Fabric-2.4.0
+YungsBetterDungeons-1.19.4-Fabric-3.4.0
+YungsBetterMineshafts-1.19.4-Fabric-3.4.0
+YungsBetterNetherFortresses-1.19.4-Fabric-1.2.0
+YungsBetterOceanMonuments-1.19.4-Fabric-2.3.0
+YungsBetterStrongholds-1.19.4-Fabric-3.4.0
+YungsBetterWitchHuts-1.19.4-Fabric-2.3.0
+YungsExtras-1.19.4-Fabric-3.3.0
+Lanimal_feeding_trough-1.0.3+1.19.4.jar.disabled
+
 ModName                                           Size      lastModified
 [1.19.4][fabric]TorchBowMod_v1.0                  [39KB]    May 05 01:46hrs.
 [Client]colorfulhearts-fabric-1.19.4-3.0.0        [281KB]   June 02 12:27hrs.
@@ -82,6 +210,7 @@ OfflineSkins-1.19.4-v1a-fabric                    [88KB]    May 05 01:43hrs.
 owo-lib-0.10.3+1.19.4                             [819KB]   May 05 12:33hrs.
 preciseblockplacing-2.0.0+1.19-fabric             [15KB]    May 05 01:43hrs.
 projectile_damage-fabric-3.2.0+1.19.4             [96KB]    May 17 11:13hrs.
+quartz-elevator-2.2.2+1.19                        [1027KB]  June 02 08:47hrs.
 recast-1.19.4-3.0                                 [25KB]    May 05 01:21hrs.
 reeses_sodium_options-1.5.0+mc1.19.4-build.72     [51KB]    May 20 03:04hrs.
 rer-2.8.0                                         [79KB]    May 05 01:01hrs.
@@ -123,4 +252,4 @@ YungsBetterOceanMonuments-1.19.4-Fabric-2.3.0     [1507KB]  May 05 01:17hrs.
 YungsBetterStrongholds-1.19.4-Fabric-3.4.0        [845KB]   May 05 01:17hrs.
 YungsBetterWitchHuts-1.19.4-Fabric-2.3.0          [361KB]   May 05 01:17hrs.
 YungsExtras-1.19.4-Fabric-3.3.0                   [531KB]   May 05 01:17hrs.
-Lanimal_feeding_trough-1.0.3+1.19.4.jar.disabled  [234KB]   May 05 01:24hrs.
+Lanimal_feeding_trough-1.0.3+1.19.4.jar.disabled
