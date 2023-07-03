@@ -102,13 +102,13 @@ Imprimir(params*) => console.print(params*)
 class console {
     static storedText := ""
     static query := ""
-    static lastLine := unset
+    static lastLine := ""
     static print(params*) {
         static console := "ahk_class AutoHotkey"
         text := ""
         for ind, v in params
             text .= v
-        this.lastLine := text
+        this.lastLine := text "`r`n"
         this.storedText .= text "`r`n"
         if !WinExist(console) {
             SetListVars(this.storedText)
@@ -116,14 +116,15 @@ class console {
         }
         ControlSetText(this.storedText, "Edit1", console)
     }
-    static Leer(&variable) {
+    static Leer(&variable?) {
         if this.query != ""
-            query := this.query, this.query := ""
+            query := this.query, this.query := "", this.lastLine := ""
         else
             query := "Ingrese su Dato de Lectura"
         variable := InputBox(query, "Pseudo Codigo Ing.Sistemas").Value
         this.storedText := Trim(this.storedText, "`r`n") variable
         this.print("")
+        return variable
     }
 }
 
@@ -131,13 +132,16 @@ Class ArrayOfSize extends Array {
     __New(size, Values?) {
         if IsSet(Values)
         {
-            this.fillWith(size, values)
+            if Values is Array
+                this.__fillWith(size, values*)
+            else
+                this.__fillWith(size, values)
             return
         }
         loop size
             this.Push("")
     }
-    __fillWith(size, Values) {
+    __fillWith(size, Values*) {
         if !(values.Length = 1 or values.Len = size)
             throw ValueError("Default Size doesn't match your Array's size!")
         if values.Length = 1
@@ -146,5 +150,17 @@ Class ArrayOfSize extends Array {
             else
                 loop size
                     this.Push(Values[A_Index])
+    }
+}
+Class ArrayWithPrint extends ArrayOfSize {
+    __item[index] {
+        get => super[index]
+        set {
+            if IsNumber(value)
+                super[index] := Number(value)
+            else
+                super[index] := value
+            console.print(A_Tab JXON.dump(this))
+        }
     }
 }
