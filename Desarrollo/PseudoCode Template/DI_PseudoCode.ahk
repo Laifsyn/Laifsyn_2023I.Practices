@@ -18,9 +18,17 @@ ImprimirMatriz(Matrix) {
     insertarSaltoDeLinea(&texto) {
         texto := texto "`r`n"
     }
-
+    return MiFilas
 }
-
+ImprimirMatrizJSON(Matrix, returnString := false) {
+    MiFilas := ""
+    for fila_index, fila in Matrix
+        MiFilas .= Format("  {}`r`n", JXON.Dump(fila))
+    MiFilas := "[`r`n" MiFilas "]`r`n"
+    if !returnString
+        SetListVars(MiFilas)
+    return MiFilas
+}
 class C_Columna extends Map {
     Default := ""
     __Item[ind] {
@@ -129,8 +137,8 @@ class console {
 }
 
 Class ArrayOfSize extends Array {
-    __New(size, Values?) {
-        if IsSet(Values)
+    __New(size, Values*) {
+        if Values.Length
         {
             if Values is Array
                 this.__fillWith(size, values*)
@@ -142,14 +150,15 @@ Class ArrayOfSize extends Array {
             this.Push("")
     }
     __fillWith(size, Values*) {
-        if !(values.Length = 1 or values.Len = size)
+        if !(values.Length = 1 or values.Length = size)
             throw ValueError("Default Size doesn't match your Array's size!")
-        if values.Length = 1
+        if values.Length = 1 {
             loop size
                 this.Push(Values[1])
-            else
-                loop size
-                    this.Push(Values[A_Index])
+        }
+        else
+            loop size
+                this.Push(Values[A_Index])
     }
 }
 Class ArrayWithPrint extends ArrayOfSize {
